@@ -1,8 +1,8 @@
 import os
 import requests
 
-bot_token = os.getenv('BOT_TOKEN')
-bot_chatID = os.getenv('BOT_CHAT_ID')
+bot_token = os.getenv('BOT_TOKEN').strip()
+bot_chatID = os.getenv('BOT_CHAT_ID').strip()
 
 def telegram_bot_sendtext(bot_message,bot_chatID,bot_token):
     url = "https://api.telegram.org/bot"+bot_token+"/sendMessage"
