@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.9.1'
+      - name: install dependencies
+        run: pip install -r requirements.txt
       - name: run script
         env:
           BOT_CHAT_ID: ${{ secrets.BOT_CHAT_ID }}
