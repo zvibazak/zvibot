@@ -1,4 +1,6 @@
-argparser = cap.ArgParser(default_config_files=['keys.yml'])
+import configargparse as cap
+
+argparser = cap.ArgParser()
 argparser.add('--bot_chatID', env_var='BOT_CHAT_ID')
 argparser.add('--bot_token', env_var='BOT_TOKEN')
 
