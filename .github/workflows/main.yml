@@ -19,6 +19,6 @@ jobs:
           python-version: '3.9.1'
       - name: run script
         env:
-          BOT_API: ${{ secrets.BOT_CHAT_ID }}
-          BOT_API_SECRET: ${{ secrets.BOT_TOKEN }}
+          BOT_CHAT_ID: ${{ secrets.BOT_CHAT_ID }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: python zvibot.py
