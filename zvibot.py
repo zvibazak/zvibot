@@ -1,4 +1,6 @@
 import os
+import requests
+
 bot_token = os.getenv('BOT_TOKEN')
 bot_chatID = os.getenv('BOT_CHAT_ID')
 
