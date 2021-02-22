@@ -2,8 +2,6 @@ import requests
 from facebook_scraper import get_posts
 import io
 from datetime import datetime, timedelta
-import twint
-import json
 import os
 
 try:
